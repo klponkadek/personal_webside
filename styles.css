@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background-image: url('background-image.jpg'); /* Ganti dengan URL gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.overlay h1 {
+    font-size: 3em;
+}
+
+.overlay h2 {
+    font-size: 2em;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.navbar ul li a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.navbar ul li a:hover{
+    font-weight: bold;
+}
+
+.image{
+    margin-right: 50%;
+    width: 600px;
+}
